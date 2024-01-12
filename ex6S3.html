@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 6</title>
+	<script language="javascript">
+		function Diviseurs() {
+			var n=prompt("entrer un entier positif :","...")
+			document.write("<h1><center>Diviseurs</center></h1><hr><br><br>");
+			document.write("les diviseurs de ",n," sont : <br>")
+		for (i = n; i >=1; i--) {
+			if (n%i==0) document.write(i,"<br>");
+		}
+		}
+	</script>
+</head>
+<body onload="Diviseurs()">
+</body>
+</html>

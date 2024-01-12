@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" language="javascript">
+		function pythagore(){
+
+        document.write("<h1><center>table de pythagore</center></h1><hr>")
+        document.write('<Table border="1" align="center" cellpadding="4" cellspacing="8">')
+        for (ligne=1; ligne<10; ligne++) {
+        	document.writeln("<tr>")
+        	for (colonne=1; colonne<10; colonne++){
+        document.writeln("<td>",ligne*colonne,"</td>");
+        }
+       document.writeln("</tr>");
+        }
+        document.write("</table>");
+		}
+	</script>
+</head>
+<body onload="pythagore()">
+</body>
+</html>

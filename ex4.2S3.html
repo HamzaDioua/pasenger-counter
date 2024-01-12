@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>espace entre caractere</title>
+	<script language="javascript" type="text/javascript">
+		function espace()
+		{
+		var exp=document.id.before.value;
+	    document.id.after.value=exp.toEspaceCase();
+		}
+    </script>
+</head>
+<body>
+<h1 align="center">Separer par Espace </h1><br><hr>
+<p> Entrez un mott et appuyer sur la bouton :</p><br>
+<div align="center"><form name="id">
+<input type="text" name="before">
+<input type="button" value="separer espace" onclick="espace()">
+<input type="text" name="after"></div>
+</form>
+</body>
+</html>

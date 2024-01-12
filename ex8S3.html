@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reservation </title>
+	<script type="text/javascript" language="javascript">
+		function reserver(){
+var txt="";
+txt=txt+"mosieur "+document.id.nom.value+" "+document.id.prenom.value;
+txt+=" a fait une reservation le "+document.id.jr.value;
+txt+=" du "+document.id.de.value;
+txt+=" a "+document.id.a.value;
+if (document.id.c1[0].checked)
+txt+=" au 1ere classe.";
+else
+txt+=" au 2eme classe.";
+alert(txt);
+}
+	</script>
+</head>
+<body>
+<hr size="5">
+	<font color="blue"><div align="center"><h1 >reservation de voyage</h1></div></font>
+<form name="id">
+	<table width="100%" border="2">
+		<tr>
+	<td>Nom :</td>
+	<td><input type="text" name="nom"></td>
+    <td>Ville Depart :</td>
+    <td><select name="de">
+    	<option selected value="fes">fes</option>
+    	v<option value="rabat">rabat</option>
+    	<option value="casablanca">casablanca</option>
+    	<option value="marakech">marakech</option>
+    </select></td>
+</tr>
+<tr>
+	<td>Prenom :</td>
+	<td><input type="text" name="prenom"></td>
+    <td>Ville Darrivee :</td>
+    <td><select name="a">
+    	<option selected value="fes">fes</option>
+    	<option value="rabat">rabat</option>
+    	<option value="casablanca">casablanca</option>
+    	<option value="marakech">marakech</option>
+    </select></td>
+</tr>
+<tr>
+	<td>jour :</td>
+	<td><select name="jour">
+    	<option selected value="lundi">lundi</option>
+    	<option value="mercredi">mercredi</option>
+    	<option value="samedi">samedi</option>
+    </select></td>
+    <td><input type="radio" name="C1" value="1">1ere classe
+        <input type="radio" name="C1" value="2" checked>2eme classe
+    </td>
+    <td><button name="btn" onclick="reserver()">reserver</button></td>
+</tr>
+</table></form>
+</body>
+</html>
